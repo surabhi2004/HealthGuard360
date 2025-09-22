@@ -1,0 +1,81 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>Plant Identification Result</title>
+</head>
+<body>
+    <h2>Plant Identified!</h2>
+    <p><strong>Scientific Name:</strong> {{ name }}</p>
+    <p><strong>Common Names:</strong> {{ common_names }}</p>
+    <p><strong>Description:</strong> {{ description }}</p>
+    <a href="/">Identify another plant</a>
+</body>
+</html>-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Identification Result</title>
+</head>
+<body>
+    <h1>Plant Identification Result</h1>
+    
+    <h3>Scientific Name:</h3>
+    <p>{{ name }}</p>
+    
+    <h3>Common Names:</h3>
+    <p>{{ common_names }}</p>
+    
+    {% if description_en %}
+        <h3>Description (English):</h3>
+        <p>{{ description_en }}</p>
+    {% endif %}
+    
+    {% if description_hi %}
+        <h3>Description (Hindi):</h3>
+        <p>{{ description_hi }}</p>
+    {% endif %}
+    
+    <br>
+    <a href="/">Go back to upload another image</a>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Identification Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/result.css') }}">
+
+</head>
+<body>
+    <h1>Plant Identification Result</h1>
+    
+    <h3>Scientific Name:</h3>
+    <p>{{ name }}</p> <!-- Keep it in Latin as it's universal -->
+
+    <h3>Common Name (English):</h3>
+    <p>{{ common_names_en }}</p>
+
+    <h3>Common Name (Hindi):</h3>
+    <p>{{ common_names_hi }}</p> <!-- Pass Hindi names from backend -->
+
+    {% if description_en %}
+        <h3>Description (English):</h3>
+        <p>{{ description_en }}</p>
+    {% endif %}
+    
+    {% if description_hi %}
+        <h3>Description (Hindi):</h3>
+        <p>{{ description_hi }}</p>
+    {% endif %}
+    
+    <br>
+    <a href="/">Go back to upload another image</a>
+</body>
+</html>
+
+

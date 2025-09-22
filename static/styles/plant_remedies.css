@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #e0f7fa;;    
+}
+.back-button {
+    background-color: #6cbf47;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-right: 1150px;
+}
+.back-button:hover{
+    background-color: darkgreen;
+
+}
+.h1main{
+margin-top: 50px;
+margin-left: 100px;
+}
+
+.container {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 280px;
+    position: absolute;
+   
+}
+.module {
+    background: white;
+    padding: 20px;
+    width: 900px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+.module h2, h2, h1 {
+    color: #08a838;
+}
+h1 {
+    color: #08a838;
+    text-shadow: rgb(35, 35, 34) 1px;
+}
+.heading{
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+.container {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+/* Custom scrollbar for WebKit browsers */
+.container {
+
+    height:100%;
+    overflow-y: scroll;
+    border: 2px solid transparent;
+    padding: 40px;
+    align-items: center;
+    margin-left: 400px;
+    
+}
+
+/* Width of the scrollbar */
+.container::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track (the background of the scrollbar) */
+.container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* Handle (the moving part of the scrollbar) */
+.container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+.container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+form{
+    width: 100%;
+    height: auto;
+    background: transparent;
+    padding: 4rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ form input
+{
+    width:40%;
+    padding: .5rem;
+    height:20px;
+    letter-spacing: 2px;
+    background: #f8f8f8;
+    border-radius: 5px;
+}
+
+#languageSwitcher {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background-color:transparent;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    appearance: none; /* Removes default arrow in some browsers */
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Add a custom dropdown arrow */
+#languageSwitcher {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
+#languageSwitcher:hover {
+    background-color: transparent;
+}

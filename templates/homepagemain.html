@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthGuard360</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/homepagemain.css') }}">
+</head>
+<body>
+    <header>
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo Image">
+        <div class="logo">HealthGuard360</div>
+        <nav>
+
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Discover the Power of <span>Ayurmedic</span> Healing</h1>
+        <p>Explore ancient wisdom with modern understanding. Your journey to holistic wellbeing starts here.</p>
+        <a href="{{ url_for('signup') }}">
+          <button class="getstart">Get starts</button>
+      </a>̥
+      
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <img src="{{ url_for('static', filename='images/natural-medicine.png') }}" alt="Harsh">
+            <h3>Natural Remedies</h3>
+            <p>Discover traditional Ayurvedic herbs and their healing properties</p>
+        </div>
+        <div class="feature">
+            <img src="{{ url_for('static', filename='images/holistic.png') }}"  alt="Holistic Wellness">
+            <h3>Holistic Wellness</h3>
+            <p>Learn about balanced living through Ayurvedic principles</p>
+        </div>
+        <div class="feature">
+            <img src="{{ url_for('static', filename='images/expert.png') }}"  alt="Expert Guidance">
+            <h3>Expert Guidance</h3>
+            <p>Access verified Ayurvedic practitioners and authentic knowledge</p>
+        </div>
+    </section>
+</body>
+</html>

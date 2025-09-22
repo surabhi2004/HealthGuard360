@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plant Leaf Identifier</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/reco.css') }}">
+
+
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Plant Image</h2>
+        <form action="/identify" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required><br><br>
+            <label for="language">Choose Language:</label>
+            <select name="language" required>
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+            </select><br><br>
+            <input type="submit" value="Identify">
+            
+        </form>
+    </div>
+</body>
+</html>

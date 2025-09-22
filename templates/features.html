@@ -1,0 +1,44 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Features</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/features.css') }}">
+</head>
+<body>
+    <h1>Our Features</h1>
+    <div class="features-container">
+        <div class="feature-card">
+            <img src="{{ url_for('static', filename='images/feature-img1.jpg') }}" alt="Plant Recognition">
+            <h2>Plant Recognition</h2>
+            <p>Identify plants instantly using our advanced AI-powered plant recognition tool.</p>
+            <form action="{{ url_for('reco') }}" method="get">
+                <button class="submit" type="submit">Identify Plant</button>
+            </form>
+            
+        </div>
+        <div class="feature-card">
+            <img src="{{ url_for('static', filename='images/feature-img2.jpg') }}" alt="Plant Information">
+            <h2>Plant Information</h2>
+            <p>Get detailed information about various plants, their uses, and benefits.</p>
+            <a href="{{ url_for('plantinfo') }}">
+                <button class="submit">Plant information</button>
+            </a>
+        </div>
+        <div class="feature-card">
+            <img src="{{ url_for('static', filename='images/feature-img3.jpg') }}" alt="Ayurveda Plant Remedies">
+            <h2>Ayurveda Plant Remedies</h2>
+            <p>Discover Ayurvedic remedies for common diseases using natural plants.</p>
+            <a href="{{ url_for('plantremedies') }}">
+                <button class="submit">Explore Remedies</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>

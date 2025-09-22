@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/plantinfo.css') }}">
+</head>
+<body>
+    <a href="{{ url_for('features') }}">
+        <button class="back-button">← Go back</button>
+    </a>
+    <!-- Language Switch Dropdown -->
+<select id="languageSwitcher" onchange="translateLanguage(this.value)">
+    <option value="">🌐 Select Language</option>
+    <option value="en">English</option>
+    <option value="hi">हिंदी</option>
+  </select>
+    <h1 class="title">Plant Information</h1>
+    <div class="main">
+        <form >
+            <input type="text" name="" placeholder="What do you want?" id="myinput">
+           
+        </form>
+    <!--div 1-->
+    
+    <div class="plant-cards">
+        <div class="card">
+            <img src="abuton1.jpeg" alt="Abutilon Indicum">
+            <h2>Abutilon Indicum</h2>
+            <p>Abutilon Indicum, commonly known as Indian Mallow, is used in traditional medicine for its anti-inflammatory and analgesic properties.</p>
+            <p><strong>Uses:</strong> Treats ulcers, diarrhea, and respiratory disorders.</p>
+        </div>
+
+        <div class="card">
+            <img src="alovera3.jpeg" alt="Aloe Vera">
+            <h2>Aloe Vera</h2>
+            <p>Aloe Vera is a succulent plant used for its healing and soothing properties.</p>
+            <p><strong>Uses:</strong> Treats skin conditions, promotes digestion, and hydrates the skin.</p>
+        </div>
+
+        <div class="card">
+            <img src="avala1.jpeg" alt="Amla">
+            <h2>Amla</h2>
+            <p>Amla, also known as Indian Gooseberry, is rich in Vitamin C and antioxidants.</p>
+            <p><strong>Uses:</strong> Boosts immunity, improves digestion, and promotes hair growth.</p>
+        </div>
+    </div>
+
+    <!--div 2-->
+
+        <div class="plant-cards">
+        <div class="card">
+            <img src="boswela4.jpeg" alt="Boswellia">
+            <h2>Boswellia</h2>
+            <p><b>Boswellia</b>, also known as Indian Frankincense, is used for its anti-inflammatory properties.</p>
+            <p><i>Uses:</i> Treats arthritis, improves joint health, and reduces inflammation.</p>
+        </div>
+
+        <div class="card">
+            <img src="whiteflower.jpeg" alt="Brahmi">
+            <h2>Brahmi</h2>
+            <p><b>Brahmi</b> is a herb known for its cognitive-enhancing properties.</p>
+            <p><i>Uses:</i> Improves memory, reduces anxiety, and promotes mental clarity.</p>
+        </div>
+
+        <div class="card">
+            <img src="vilaychi.jpeg" alt="Cardamom">
+            <h2>Cardamom</h2>
+            <p><b>Cardamom</b> is a spice known for its digestive and aromatic properties.</p>
+            <p><i>Uses:</i> Aids digestion, freshens breath, and improves respiratory health.</p>
+        </div>
+    </div>
+
+    <!--div 3-->
+
+        <div class="plant-cards">
+        <div class="card">
+            <img src="alovera3.jpeg" alt="Arjuna">
+            <h2>Arjuna</h2>
+            <p>Arjuna is known for its cardioprotective properties and is used in Ayurvedic medicine.</p>
+            <p><strong>Uses:</strong> Supports heart health, reduces cholesterol, and improves circulation.</p>
+        </div>
+
+        <div class="card">
+            <img src="ashva4.jpeg" alt="Ashwagandha">
+            <h2>Ashwagandha</h2>
+            <p>Ashwagandha is an adaptogen used to reduce stress and improve vitality.</p>
+            <p><strong>Uses:</strong> Reduces anxiety, boosts energy, and enhances cognitive function.</p>
+        </div>
+
+        <div class="card">
+            <img src="bitermelon2.jpeg" alt="Bitter Melon">
+            <h2>Bitter Melon</h2>
+            <p>Bitter Melon is known for its blood sugar-regulating properties.</p>
+            <p><strong>Uses:</strong> Helps manage diabetes, improves skin health, and aids digestion.</p>
+        </div>
+    </div>
+
+    <!--div 4-->
+
+    <div class="plant-cards">
+        <div class="card">
+            <img src="costus 1.jpeg" alt="Costus lgneus">
+            <h2>Costus Lgneus</h2>
+            <p>Costus lgneus,also known as insulin plant,is used for its blood sugar-regulation properties.</p>
+            <p><strong>Uses:</strong> Helps manage diabetes and improve insulin sensitivity.</p>
+        </div>
+
+        <div class="card">
+            <img src="cumin1.jpeg" alt="Cumin">
+            <h2>Cumin</h2>
+            <p>Cumin is a spice known for its digestive and antioxidant properties.</p>
+            <p><strong>Uses:</strong> Aids digestion, boosts immunity, and improves skin health.</p>
+        </div>
+
+        <div class="card">
+            <img src="gotu kola 1.jpeg" alt="Gotu kola">
+            <h2>Gotu Kola</h2>
+            <p>Gotu Kola is a herb known for its cognitive and skin health benefits.</p>
+            <p><strong>Uses:</strong> Improves memory, reduces anxiety, and promotes wound healing.</p>
+        </div>
+    </div>
+
+    <!--div 5-->
+    
+    <div class="plant-cards">
+
+        <div class="card">
+            <img src="Guduchi.jpeg" alt="Guduchi">
+            <h2>Guduchi</h2>
+            <p>Guduchi, also known as Giloy, is known for its immune-boosting properties.</p>
+            <p><strong>Uses:</strong>Boosts immunity, reduces fever, and improves digestion.</p>
+        </div>
+
+        <div class="card">
+            <img src="guggulu3.jpeg" alt="Guggulu">
+            <h2>Guggulu</h2>
+            <p>Guggulu is a resin known for its anti-inflammatory and lipid-lowering properties.</p>
+            <p><strong>Uses:</strong> Reduces cholesterol, treats arthritis, and promotes weight loss.</p>
+        </div>
+
+        <div class="card">
+            <img src="Henna.jpeg" alt="Henna">
+            <h2>Henna</h2>
+            <p>Henna is a plant used for its natural dye and cooling properties.</p>
+            <p><strong>Uses:</strong>Conditions hair, cools the body, and treats skin conditions.</p>
+        </div>
+    </div>
+
+    <!--div 5-->
+
+    <div class="plant-cards">
+        
+        <div class="card">
+            <img src="liorice root.jpeg" alt="Licorice Root">
+            <h2>Licorice Root</h2>
+            <p>Licorice Root is known for its soothing and anti-inflammatory properties.</p>
+            <p><strong>Uses:</strong>Treats sore throat, improves digestion, and reduces inflammation.</p>
+        </div>
+
+        <div class="card">
+            <img src="manjinstha.jpeg" alt="Manjistha">
+            <h2>Manjistha</h2>
+            <p>Manjistha is a herb known for its blood-purifying properties.</p>
+            <p><strong>Uses:</strong> Detoxifies the blood, improves skin health, and reduces inflammation.</p>
+        </div>
+
+        <div class="card">
+            <img src="melia dubia.jpeg" alt="Melia Dubia">
+            <h2>Melia Dubia</h2>
+            <p>'Melia Dubia is a fast-growing tree used for its medicinal properties.</p>
+            <p><strong>Uses:</strong>Treats skin disorders, improves digestion, and boosts immunity.</p>
+        </div>
+    </div>
+
+    <!--div 6-->
+
+    <div class="plant-cards">
+        
+        <div class="card">
+            <img src="moringa.jpeg" alt="Moringa">
+            <h2>Moringa</h2>
+            <p>Moringa is a nutrient-rich plant known for its antioxidant properties.</p>
+            <p><strong>Uses:</strong>'Boosts immunity, improves skin health, and regulates blood sugar.</p>
+        </div>
+
+        <div class="card">
+            <img src="neem.jpeg" alt="Neem">
+            <h2>Neem</h2>
+            <p>Neem is a versatile plant with antibacterial and antifungal properties.</p>
+            <p><strong>Uses:</strong>Treats skin disorders, boosts immunity, and purifies blood.</p>
+        </div>
+
+        <div class="card">
+            <img src="punarnava.jpeg" alt="Punarnava">
+            <h2>Punarnava</h2>
+            <p>Punarnava is a herb known for its diuretic and anti-inflammatory properties.</p>
+            <p><strong>Uses:</strong>Reduces swelling, improves kidney function, and detoxifies the body.</p>
+        </div>
+    </div>
+
+    <!--div 7-->
+    
+    <div class="plant-cards">
+        
+        <div class="card">
+            <img src="tripl.jpeg" alt="Triphala">
+            <h2>Triphala</h2>
+            <p>Triphala is a traditional Ayurvedic formulation made from three fruits.</p>
+            <p><strong>Uses:</strong>mproves digestion, detoxifies the body, and promotes overall health.</p>
+        </div>
+
+        <div class="card">
+            <img src="tulasi.jpeg" alt="Tulasi">
+            <h2>Tulasi</h2>
+            <p>'Tulsi, also known as Holy Basil, is revered for its medicinal and spiritual properties.</p>
+            <p><strong>Uses:</strong>Boosts immunity, reduces stress, and improves respiratory health.</p>
+        </div>
+
+        <div class="card">
+            <img src="turmeric.jpeg" alt="Turmaric">
+            <h2>Turmaric</h2>
+            <p>Turmeric is a spice known for its anti-inflammatory and antioxidant properties.</p>
+            <p><strong>Uses:</strong>Helps with arthritis, improves digestion, and enhances skin health.</p>
+        </div>
+    </div>
+
+    <!--div 8-->
+
+    <div class="plant-cards">
+        
+        <div class="card">
+            <img src="shatavari.jpeg" alt="Shatavari">
+            <h2>Shatavari</h2>
+            <p>Shatavari is known in ayurveda as the Queen of Herbs for its powerful effect on the female reproductive system.</p>
+            <p><strong>Uses:</strong>used for Harmonal balance,female reproductive health and lactation support.</p>
+        </div>
+
+        <div class="card">
+            <img src="bibhitaki.jpeg" alt="Bibhitaki">
+            <h2>Bibhitaki</h2>
+            <p>Bibhitaki is also known as Baheda,is one of the three fruits that make up Triphala </p>
+            <p><strong>Uses:</strong>used for digestive health,respiratory issues and skin problem.</p>
+   
+     </div>
+        <div class="card">
+            <img src="bhringraj.jpeg" alt="Bhringraj">
+            <h2>Bhringraj</h2>
+            <p>Bhringraj is also known as ayurvedic herb celebrated for its hair and skin benifits.</p>
+            <p><strong>Uses:</strong>It promotes hair growth,reduces hair fall and improve liver function.</p>
+        </div>
+    </div>
+
+     <!--div 9-->
+
+     <div class="plant-cards">
+        
+        <div class="card">
+            <img src="bilva.jpeg" alt="Bilva">
+            <h2>Bilva</h2>
+            <p>Bilva is also known as bael has meadicinal properties and used in ayurvedic practices for various ailments</p>
+            <p><strong>Uses:</strong>used for treating digestive issues,diabetes and respiratory problem.</p>
+        </div>
+
+        <div class="card">
+            <img src="cedrus2.jpeg" alt="Cedrus deodara">
+            <h2>Cedrus Deodara</h2>
+            <p>Cedrus deodara is known as Devdaru native to himalayas </p>
+            <p><strong>Uses:</strong>used for respiratory issues,skin problem and digestive issues.</p>
+   
+     </div>
+        <div class="card">
+            <img src="cyperus.jpeg" alt="Cyperus rotundus">
+            <h2>Cyperus Rotundus</h2>
+            <p>Cyperus Rotundus is also known as purple nutsedge or nutgrass or java grass belong to the sedge family.</p>
+            
+            <p><strong>Uses:</strong>Used for stomach disorders,inflammation, fever and menstrual irregularities.</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $("#myinput").on("keyup", function(){
+        var value = $(this).val().toLowerCase();
+  
+        // Hide everything initially
+        $(".card").hide();
+        $(".heading").hide();
+  
+        // 1. Show modules that match directly
+        $(".card").filter(function() {
+          return $(this).text().toLowerCase().indexOf(value) > -1;
+        }).show();
+  
+        // 2. Show headings that match directly AND their modules
+        $(".heading").each(function() {
+          var headingText = $(this).text().toLowerCase();
+          if (headingText.indexOf(value) > -1) {
+            $(this).show();
+            // Show modules under this heading until the next heading
+            $(this).nextUntil(".heading", ".card").show();
+          }
+        });
+  
+        // 3. Show any heading if at least one module under it is visible
+        $(".heading").each(function() {
+          if ($(this).nextUntil(".heading", ".card:visible").length > 0) {
+            $(this).show();
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+   function translateLanguage(lang) {
+    if (lang === "en") {
+       window.location.href = "{{url_for('plantremedies')}}"; // Redirect to English version
+     } else if (lang === "hi") {
+       window.location.href = "{{url_for('plantremedieshindi')}}"; // Redirect to Hindi version
+     }
+   }
+ </script>
+  
+</body>
+</html>
+
+
+

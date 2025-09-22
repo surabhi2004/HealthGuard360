@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: #e0f7fa;
+      color:black;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contact-container {
+      width: 90%;
+      max-width: 700px;
+      padding: 50px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 36px;
+      color: #1b5e20;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 15px 0;
+    }
+
+    .icon {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 10px;
+      filter: hue-rotate(50deg);
+    }
+
+    .social-icons {
+      margin-top: 30px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img {
+      width: 32px;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 28px;
+      }
+
+      .contact-container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="contact-container">
+      <h2>Get in Touch</h2>
+
+      <p><img class="icon" src="https://img.icons8.com/ios-glyphs/30/4caf50/marker.png" /> Solapur, India</p>
+      <p><img class="icon" src="https://img.icons8.com/ios-glyphs/30/4caf50/phone.png" /> +91 9897100000 </p>
+      <p><img class="icon" src="https://img.icons8.com/ios-glyphs/30/4caf50/email.png" /> info@ayurveda-plants.com</p>
+
+      <div class="social-icons">
+        <a href="#" title="Facebook"><img src="https://img.icons8.com/ios-filled/50/4caf50/facebook.png" alt="Facebook" /></a>
+        <a href="#" title="Instagram"><img src="https://img.icons8.com/ios-filled/50/4caf50/instagram-new.png" alt="Instagram" /></a>
+        <a href="#" title="WhatsApp"><img src="https://img.icons8.com/ios-filled/50/4caf50/whatsapp.png" alt="WhatsApp" /></a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

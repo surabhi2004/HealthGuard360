@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/plant_remedies.css') }}">
+</head>
+<body>
+  <a href="{{ url_for('features') }}">
+    <button class="back-button">← Wapas Jaayein</button>
+</a>
+    <select id="languageSwitcher" onchange="translateLanguage(this.value)">
+        <option value="">🌐 Select Language</option>
+        <option value="en">English</option>
+        <option value="hi">हिंदी</option>
+      </select>
+    <h1 class="h1main">Ayurvedic Plant Remedies</h1>
+    <form >
+      <input type="text" name="" placeholder="What do you want?" id="myinput">
+     
+  </form>
+  <div class="container">
+    <h2 class="heading">Madhumeh</h2>
+<div class="module">
+ 
+    <h2>Karela (Momordica charantia)</h2>
+   <p><b>Upyog kaise karein:</b> Taaze karele ka ras nikaal kar roz subah khaali pet 30-50 ml piyein.</p>
+   <p><b>Atirikt jankari:</b> Karela mein aise tatva hote hain jo insulin jaise kaam karte hain aur blood sugar ko kam karte hain.</p>     
+</div>
+<div class="module">
+  <h2>Methi (Trigonella foenum-graecum)</h2>
+  <p><b>Upyog kaise karein:</b> 1-2 chammach methi ke beej raat bhar bhigo dein. Subah beej chabaayein aur paani piyein.</p>
+  <p><b>Atirikt jankari:</b> Methi mein fiber hota hai jo carbohydrate ke absorption ko dheema karta hai.</p>     
+</div>
+
+
+
+<h2 class="heading">Saans ke Rog</h2>
+<div class="module">
+    <h2>Tulsi (Ocimim sanctum)</h2>
+    <p><b>Upyog kaise karein:</b> 8-10 taazi tulsi ki patte paani mein 5 minute tak ubaal kar adrak aur shahad milaakar din mein do baar piyein.</p>
+    <p><b>Atirikt jankari:</b> Tulsi mein anti-inflammatory aur antimicrobial guno hote hain.</p>   
+</div>
+
+<div class="module">
+    <h2>Adrak (Zingiber officinale)</h2>
+    <p><b>Upyog kaise karein:</b> Adrak ko kaddukas karke 10 minute tak paani mein ubaalein. Shahad aur nimbu milaakar din mein 2-3 baar piyein.</p>
+    <p><b>Atirikt jankari:</b> Adrak shwas naliyon mein sujan ko kam karta hai.</p>   
+</div>
+
+<h2 class="heading">Ghaav aur Sankraman</h2>
+<div class="module">
+    <h2>Haldi (Curcuma longa)</h2>
+    <p><b>Upyog kaise karein:</b> Haldi powder ko paani ya narial tel ke saath milaakar lep banaayein aur ghaav par lagaayein.</p>
+    <p><b>Atirikt jankari:</b> Haldi mein antiseptic guno hote hain.</p>   
+</div>
+
+<h2 class="heading">Mahilaon ke Mahavari Samasyaayein</h2>
+<div class="module">
+    <h2>Shatavari (Asparagus racemosus)</h2>
+    <p><b>Upyog kaise karein:</b> 1-2 gram shatavari churna ko doodh ke saath din mein do baar lein.</p>
+    <p><b>Atirikt jankari:</b> Shatavari hormone santulan mein madad karta hai.</p>   
+</div>
+
+<h2 class="heading">Aankhon ke Rog</h2>
+<div class="module">
+    <h2>Triphala (Amalaki, Bibhitaki, Haritaki)</h2>
+    <p><b>Upyog kaise karein:</b> Triphala powder ko raat bhar paani mein bhigo dein aur subah us paani se aankhon ko dho lein.</p>
+    <p><b>Atirikt jankari:</b> Triphala aankhon ki sehat sudhaarta hai.</p>   
+</div>
+
+<h2 class="heading">Kide aur Keede</h2>
+<div class="module">
+    <h2>Vidanga (Embelia ribes)</h2>
+    <p><b>Upyog kaise karein:</b> 1-2 gram vidanga powder ko shahad ya garam paani ke saath lein.</p>
+    <p><b>Atirikt jankari:</b> Vidanga pet ke keede nikaalne mein madad karta hai.</p>   
+</div>
+
+<h2 class="heading">Cancer</h2>
+<div class="module">
+    <h2>Curcumin (Haldi se)</h2>
+    <p><b>Upyog kaise karein:</b> 1 chammach haldi powder ko garam doodh mein milaakar roz piyein.</p>
+    <p><b>Atirikt jankari:</b> Curcumin mein cancer rodhi gun hote hain.</p>   
+</div>
+
+<h2 class="heading">Bawaseer</h2>
+<div class="module">
+    <h2>Haritaki (Terminalia chebula)</h2>
+    <p><b>Upyog kaise karein:</b> 1-2 gram haritaki churna ko garam paani ke saath raat mein lein.</p>
+    <p><b>Atirikt jankari:</b> Haritaki pachan sudhaar kar kabz door karta hai, jo bawaseer mein madad karta hai.</p>   
+</div>
+
+<div class="module">
+    <h2>Mooli (Raphanus sativus)</h2>
+    <p><b>Upyog kaise karein:</b> Rozana mooli ka ras piyein ya apne bhojan mein shamil karein.</p>
+    <p><b>Atirikt jankari:</b> Mooli sujan aur bleeding ko kam karti hai.</p>   
+</div>
+
+<h2 class="heading">Thyroid Rog</h2>
+<div class="module">
+    <h2>Ashwagandha (Withania somnifera)</h2>
+    <p><b>Upyog kaise karein:</b> 1-2 gram ashwagandha powder ko garam doodh ke saath rozana lein.</p>
+    <p><b>Atirikt jankari:</b> Ashwagandha thyroid hormones ka santulan banaye rakhta hai aur urja badhaata hai.</p>   
+</div>
+
+<div class="module">
+    <h2>Guggul (Commiphora wightii)</h2>
+    <p><b>Upyog kaise karein:</b> 500 mg guggul extract ko din mein do baar paani ke saath lein.</p>
+    <p><b>Atirikt jankari:</b> Guggul thyroid function ko badhava deta hai, khaaskar hypothyroidism mein.</p>   
+</div>
+
+<h2 class="heading">Kidney Stone</h2>
+<div class="module">
+    <h2>Punarnava (Boerhavia diffusa)</h2>
+    <p><b>Upyog kaise karein:</b> Punarnava ki jad ko paani mein ubaal kar uska kadha banaayein aur din mein do baar piyein.</p>
+    <p><b>Atirikt jankari:</b> Punarnava ek diuretic hai jo kidney stone ko flush karta hai.</p>   
+</div>
+
+<div class="module">
+    <h2>Varuna (Crataeva nurvala)</h2>
+    <p><b>Upyog kaise karein:</b> 1-2 gram varuna chhaal ka churna paani ke saath din mein do baar lein.</p>
+    <p><b>Atirikt jankari:</b> Varuna kidney stone ko gholne mein madad karta hai aur urinary health ko support karta hai.</p>   
+</div>
+
+<h2 class="heading">Nindra ki Samasya (Insomnia)</h2>
+<div class="module">
+    <h2>Brahmi (Bacopa monnieri)</h2>
+    <p><b>Upyog kaise karein:</b> 1-2 chammach brahmi churna ko garam doodh ke saath sone se pehle lein.</p>
+    <p><b>Atirikt jankari:</b> Brahmi mann ko shaant karta hai aur achhi neend lata hai.</p>   
+</div>
+
+<div class="module">
+    <h2>Jatamansi (Nardostachys jatamansi)</h2>
+    <p><b>Upyog kaise karein:</b> 1 gram jatamansi churna ko raat mein garam paani ke saath lein.</p>
+    <p><b>Atirikt jankari:</b> Jatamansi ek prakritik neend laane wala padarth hai.</p>   
+</div>
+
+<h2 class="heading">Raktalpata (Anemia)</h2>
+<div class="module">
+    <h2>Amla (Phyllanthus emblica)</h2>
+    <p><b>Upyog kaise karein:</b> 1-2 chammach amla churna ko paani ke saath rozana lein.</p>
+    <p><b>Atirikt jankari:</b> Amla vitamin C se bharpoor hai, jo iron ke absorption ko badhata hai.</p>   
+</div>
+
+<div class="module">
+    <h2>Punarnava (Boerhavia diffusa)</h2>
+    <p><b>Upyog kaise karein:</b> Punarnava ka juice ya kadha rozana piyein.</p>
+    <p><b>Atirikt jankari:</b> Punarnava hemoglobin badhata hai aur anemia mein upyogi hai.</p>   
+</div>
+
+<h2 class="heading">Motaapa</h2>
+<div class="module">
+    <h2>Garcinia (Garcinia cambogia)</h2>
+    <p><b>Upyog kaise karein:</b> 500 mg garcinia extract ko har bhojan se pehle din mein do baar lein.</p>
+    <p><b>Atirikt jankari:</b> Garcinia bhook ko kam karta hai aur vajan kam karta hai.</p>   
+</div>
+
+<div class="module">
+    <h2>Triphala (Amalaki, Bibhitaki, Haritaki)</h2>
+    <p><b>Upyog kaise karein:</b> 1-2 gram triphala churna ko raat mein garam paani ke saath lein.</p>
+    <p><b>Atirikt jankari:</b> Triphala sharir ko detox karta hai aur metabolism ko badhata hai.</p>   
+</div>
+
+<h2 class="heading">Migraine</h2>
+<div class="module">
+    <h2>Butterbur (Petasites hybridus)</h2>
+    <p><b>Upyog kaise karein:</b> 50-75 mg butterbur extract roz lein.</p>
+    <p><b>Atirikt jankari:</b> Butterbur migraine ke dard aur aavritti ko kam karta hai.</p>   
+</div>
+
+<div class="module">
+    <h2>Pudina (Mentha piperita)</h2>
+    <p><b>Upyog kaise karein:</b> Pudina tel ko kanpatiyon par lagaayein ya uski sugandh lein.</p>
+    <p><b>Atirikt jankari:</b> Pudina thandak deta hai aur migraine dard mein rahat deta hai.</p>   
+</div>
+
+<h2 class="heading">Uncha Cholesterol</h2>
+<div class="module">
+    <h2>Lehsun (Allium sativum)</h2>
+    <p><b>Upyog kaise karein:</b> 2-3 kachche lehsun ki kaliyon ko chabaayein ya apne bhojan mein shamil karein.</p>
+    <p><b>Atirikt jankari:</b> Lehsun LDL (bura cholesterol) ko kam karta hai aur heart health ko sudhaarta hai.</p>   
+</div>
+
+<div class="module">
+    <h2>Dhaniya (Coriandrum sativum)</h2>
+    <p><b>Upyog kaise karein:</b> 1-2 chammach dhaniya ke beej raat bhar bhigo kar uska paani subah piyein.</p>
+    <p><b>Atirikt jankari:</b> Dhaniya cholesterol ke star ko kam karta hai.</p>   
+</div>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $("#myinput").on("keyup", function(){
+        var value = $(this).val().toLowerCase();
+  
+        // Hide everything initially
+        $(".module").hide();
+        $(".heading").hide();
+  
+        // 1. Show modules that match directly
+        $(".module").filter(function() {
+          return $(this).text().toLowerCase().indexOf(value) > -1;
+        }).show();
+  
+        // 2. Show headings that match directly AND their modules
+        $(".heading").each(function() {
+          var headingText = $(this).text().toLowerCase();
+          if (headingText.indexOf(value) > -1) {
+            $(this).show();
+            // Show modules under this heading until the next heading
+            $(this).nextUntil(".heading", ".module").show();
+          }
+        });
+  
+        // 3. Show any heading if at least one module under it is visible
+        $(".heading").each(function() {
+          if ($(this).nextUntil(".heading", ".module:visible").length > 0) {
+            $(this).show();
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+    function translateLanguage(lang) {
+      if (lang === "en") {
+       window.location.href = "{{url_for('plantremedies')}}"; // Redirect to English version
+     } else if (lang === "hi") {
+       window.location.href = "{{url_for('plantremedieshindi')}}"; // Redirect to Hindi version
+     }
+    }
+  </script>
+
+</body>
+</html>
